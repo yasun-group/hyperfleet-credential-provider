@@ -497,7 +497,11 @@ func TestBindFlagsToViper_FlagTakesPrecedence(t *testing.T) {
 	require.NoError(t, err)
 
 	flags := &Flags{
+<<<<<<< HEAD
 		ProviderName:    "from-flag",             // Set by flag
+=======
+		ProviderName:    "from-flag",           // Set by flag
+>>>>>>> fff3609 (fix: implement standard flag > env priority)
 		CredentialsFile: "/flag/path/creds.json", // Set by flag
 	}
 
